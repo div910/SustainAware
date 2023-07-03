@@ -142,3 +142,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'sustainaware_backend', 'sustainaware_backend', 'static')
 ]
+
+OPENAI_API_KEY = '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'

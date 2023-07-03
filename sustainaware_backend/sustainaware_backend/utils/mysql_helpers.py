@@ -5,14 +5,14 @@ from django.conf import settings
 
 def get_connection(connection_config):
     try:
-        connection_config = {
-            'host': connection_config.get('host'),
-            'database': connection_config.get('database'),
-            'user': connection_config.get('user'),
-            'password': connection_config.get('password'),
-            'post': connection_config.get('port')
+        connection_config_new = {
+            'host': connection_config.get('HOST'),
+            'database': connection_config.get('NAME'),
+            'user': connection_config.get('USER'),
+            'password': connection_config.get('PASSWORD'),
+            'port': connection_config.get('POST')
         }
-        connection = pymysql.connect(**connection_config)
+        connection = pymysql.connect(**connection_config_new)
         return connection
     except Exception as ex:
         print(f"Exception mysql connection initialization, {ex}")
