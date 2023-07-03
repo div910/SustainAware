@@ -15,8 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from sustainaware_backend.apps.profile import urls as profile_urls
+from sustainaware_backend.apps.marketplace import urls as marketplace_urls
+from sustainaware_backend.apps.recycle_wizard import urls as recycle_wizard_urls
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('profile/', include(profile_urls)),
+    path('marketplace/', include(marketplace_urls)),
+    path('recycle_wizard/', include(recycle_wizard_urls))
 ]
