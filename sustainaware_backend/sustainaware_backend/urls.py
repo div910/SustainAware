@@ -16,14 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
+from django.conf import settings
 from sustainaware_backend.apps.profile import urls as profile_urls
 from sustainaware_backend.apps.marketplace import urls as marketplace_urls
 from sustainaware_backend.apps.recycle_wizard import urls as recycle_wizard_urls
-
+from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', views.home),
     path('admin/', admin.site.urls),
     path('profile/', include(profile_urls)),
     path('marketplace/', include(marketplace_urls)),
     path('recycle_wizard/', include(recycle_wizard_urls))
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

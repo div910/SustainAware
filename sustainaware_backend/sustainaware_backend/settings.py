@@ -29,7 +29,8 @@ SECRET_KEY = 'django-insecure-s=4hzh(mkmo=k(%s@@)(+qq4t%d7@^t#%_)mn=%1a5ke7pqnqx
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
 
 # Application definition
 
@@ -52,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
 ROOT_URLCONF = 'sustainaware_backend.urls'
@@ -60,7 +61,7 @@ ROOT_URLCONF = 'sustainaware_backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'sustainaware_backend/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'sustainaware_backend/sustainaware_backend/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,7 +121,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
+STATIC_ROOT =  os.path.join(BASE_DIR, 'sustainaware_backend/static')
 STATIC_URL = '/static/'
 
 STATICFILES_FINDERS = {
@@ -135,5 +136,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'sustainaware_backend', 'static')
+    os.path.join(BASE_DIR, 'sustainaware_backend', 'sustainaware_backend', 'static')
 ]

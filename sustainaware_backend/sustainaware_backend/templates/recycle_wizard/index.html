@@ -1,8 +1,44 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Recycle Wizard</title>
+  <title>Text Input Page</title>
+  <link rel="stylesheet" type="text/css" href="/static/recycle_wizard/css/style.css">
 </head>
 <body>
-This is the Recycling Page
+  <div class="container">
+    <header>
+        <img src="/static/recycle_wizard/img/Screenshot 2023-07-03 at 8.32.16 PM.png">
+      </header>
+
+    <div class="input-section">
+
+        <div class="primary-content">
+            <div class="resp-textbox">
+              <input type="text" placeholder="Enter some text..." />
+            </div>
+          </div>
+
+        <link href="//db.onlinewebfonts.com/c/22065c5e6b9fb52ee13ab8a0c7e38fe3?family=FrankfurterDMed" rel="stylesheet" type="text/css"/>
+<div class="text">Textbox Template</div>
+<p>It's only free to use. You can type the <i>textbox</i> and you can see it Ever you want! so you don't have to. Copy the code and paste it in your Own Codepen Project! You can do it like a Professional Coder and some more stuff to do!</p>
+<textarea cols="92" rows="15" style="background-color:#c2c2c2;">
+</textarea>
+
+
+
+      <input type="text" id="user-input" placeholder="Enter your text">
+      <button id="microphone-btn" onclick="startRecording()"><i class="fas fa-microphone"></i></button>
+      <button id="image-upload-btn" onclick="uploadImage()"><i class="fas fa-image"></i></button>
+    </div>
+
+    <button id="submit-btn" onclick="showOutput()">Submit</button>
+
+    <div id="output-section">
+      <h2>Output:</h2>
+      <p id="output"></p>
+    </div>
+  </div>
+
+  <script src="/static/recycle_wizard/js/script.js"></script>
 </body>
 </html>
