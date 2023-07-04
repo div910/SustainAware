@@ -10,7 +10,7 @@ body {
 
   header {
     height: 9%;
-    background-color:#CAEF72; /* Set a green background color */
+    background-color:#000000; /* Set a green background color */
     color: white; /* Set the text color to white */
     padding: 5px; /* Add padding for spacing */
   
@@ -23,6 +23,8 @@ body {
     width: 220px;
     height: 90px;
     margin: 20px;
+    border-style: solid;
+    border-color: white;
   }
 
   .center{

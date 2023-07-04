@@ -1,6 +1,6 @@
 header {
     height: 9%;
-    background-color:#CAEF72; /* Set a green background color */
+    background-color:#000000; /* Set a green background color */
     color: white; /* Set the text color to white */
     padding: 5px; /* Add padding for spacing */
   
@@ -37,15 +37,17 @@ body {
     width: 220px;
     height: 90px;
     margin: 20px;
+    border-style: solid;
+    border-color: white;
   }
-
+/*
   .upper{
     background-image: url(https://www.conserve-energy-future.com/wp-content/uploads/2014/07/sustainable-development-eco-friendly-globe.jpg);
     height: 1000px;
     background-repeat: no-repeat;
     background-blend-mode: lighten;
   }
-  
+ */
   button {
     display: inline-block;
     padding: 12px 24px;
@@ -149,5 +151,5 @@ body {
   /* button:hover {
     background-color: #45a049;
   } */
-  
+
   

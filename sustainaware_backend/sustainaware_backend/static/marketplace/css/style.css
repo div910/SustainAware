@@ -6,13 +6,13 @@
   } */
 
   header {
-    background-color: #62c46c; /* Set a green background color */
+    height: 9%;
+    background-color:#CAEF72; /* Set a green background color */
     color: white; /* Set the text color to white */
-    padding: 20px; /* Add padding for spacing */
+    padding: 5px; /* Add padding for spacing */
 
     /* Add additional styles for a visually appealing header */
-    text-align: center; /* Center-align the text */
-    font-size: 32px; /* Set the font size */
+    font-size: 12px; /* Set the font size */
     font-family: Arial, sans-serif; /* Specify the font family */
   }
   header h1 {
@@ -22,6 +22,12 @@
 
   header p {
     font-size: 18px;
+  }
+
+  img {
+    width: 220px;
+    height: 90px;
+    margin: 20px;
   }
 
 .grid-container {

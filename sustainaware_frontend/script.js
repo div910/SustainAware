@@ -1,5 +1,5 @@
 function redirectToLogin() {
-    window.location.href = "/Users/div910/Documents/SustainAware/basic/login.html";
+    window.location.href = "/Users/div910/Documents/SustainAware/sustainaware_frontend/login.html";
   }
 
   const button = document.querySelector('.button');

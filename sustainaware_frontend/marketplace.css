@@ -5,15 +5,26 @@
     background-color: rgb(81, 198, 137);
   } */
 
+body {
+    background-image: linear-gradient(to bottom right, rgb(19, 179, 67), rgb(43, 221, 61), rgb(147, 241, 64), rgb(162, 213, 23), rgb(15, 174, 47), rgb(17, 121, 69), rgb(47, 181, 155), rgb(21, 216, 31), rgb(20, 227, 137), rgb(34, 213, 115), rgb(162, 223, 32), rgb(47, 219, 90));
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    /* background: linear-gradient(120deg,#2980b9,#8e44ad); */
+    height: 100vh;
+    overflow: hidden;
+  }
+
   header {
     height: 9%;
-    background-color:#CAEF72; /* Set a green background color */
+    background-color:#000000; /* Set a green background color */
     color: white; /* Set the text color to white */
     padding: 5px; /* Add padding for spacing */
   
     /* Add additional styles for a visually appealing header */
     font-size: 12px; /* Set the font size */
     font-family: Arial, sans-serif; /* Specify the font family */
+    margin-bottom: 60px;
   }
   header h1 {
     font-weight: bold;
@@ -28,6 +39,8 @@
     width: 220px;
     height: 90px;
     margin: 20px;
+    border-style: solid;
+    border-color: white;
   }
 
 .grid-container {
