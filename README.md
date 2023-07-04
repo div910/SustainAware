@@ -19,7 +19,7 @@ Run the below mentioned commands, make sure your system has docker installed in 
 - sudo docker run -it --network=host sustainaware:latest /bin/bash
 - /usr/local/python3.8/bin/python3.8 sustainaware_backend/manage.py runserver
 
-###Screenshots of the website
+### Screenshots of the website
 
 [![Screenshot-2023-07-04-at-5-12-33-PM.png](https://i.postimg.cc/0ytdKxJ7/Screenshot-2023-07-04-at-5-12-33-PM.png)](https://postimg.cc/CRqf937K)
 
