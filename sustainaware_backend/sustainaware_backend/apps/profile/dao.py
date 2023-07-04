@@ -4,13 +4,13 @@ class Dao:
 
     def __init__(self):
         self.database_config = settings.DATABASES['default']
-        self.market_place_table_name = 'user_account'
+        self.user_profile_table_name = 'user_account'
 
     def get_account_by_username(self, username):
         try:
             connection_obj = get_connection(self.database_config)
             query_params = {}
-            query = f'select id, product_description_raw, product_description_frontend, image_name from {self.market_place_table_name} where username = "{username}"'
+            query = f'select id, product_description_raw, product_description_frontend, image_name from {self.user_profile_table_name} where username = "{username}"'
             result = execute_select(connection_obj, query, query_params)
             return result
         except Exception as ex:
