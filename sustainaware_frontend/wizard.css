@@ -14,6 +14,7 @@ body {
     /* Add additional styles for a visually appealing header */
     font-size: 12px; /* Set the font size */
     font-family: Arial, sans-serif; /* Specify the font family */
+    margin-bottom: 35px;
   }
 
   img {
@@ -92,11 +93,11 @@ body {
 body {
   font-family: FrankfurterDMed;
   padding: 37px;
-  color: #d4735d;
+  color: #000000;  /*d4735d*/
 }
 
 .text {
-  font-size: 70px;
+  font-size: 65px;
   line-height: 53px;
   font-family: system-ui;
   font-weight: 800;
@@ -104,7 +105,8 @@ body {
   
 
 html, body {
-  background-image: linear-gradient(to bottom right, rgb(60, 175, 252), rgb(58, 176, 236), rgb(56, 177, 220), rgb(54, 178, 203), rgb(52, 179, 187), rgb(50, 180, 171), rgb(47, 181, 155), rgb(45, 182, 139), rgb(43, 183, 123), rgb(41, 184, 106), rgb(39, 185, 90), rgb(37, 186, 74));
+  background-image: linear-gradient(to bottom right, rgb(60, 175, 252), rgb(58, 176, 236), rgb(50, 190, 183), rgb(54, 203, 163), rgb(65, 212, 156), rgb(51, 210, 128), rgb(42, 196, 106), rgb(36, 189, 97), rgb(42, 196, 67), rgb(48, 212, 33), rgb(110, 198, 37), rgb(148, 242, 71));
+  /* background-image: linear-gradient(to bottom right, rgb(60, 175, 252), rgb(58, 176, 236), rgb(56, 177, 220), rgb(54, 178, 203), rgb(52, 179, 187), rgb(50, 180, 171), rgb(47, 181, 155), rgb(45, 182, 139), rgb(43, 183, 123), rgb(41, 184, 106), rgb(39, 185, 90), rgb(37, 186, 74)); */
   margin: 0;
   height: 100%;
 }
