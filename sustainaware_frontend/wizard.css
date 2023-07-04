@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    height: 9%;
+    background-color:#CAEF72; /* Set a green background color */
+    color: white; /* Set the text color to white */
+    padding: 5px; /* Add padding for spacing */
+  
+    /* Add additional styles for a visually appealing header */
+    font-size: 12px; /* Set the font size */
+    font-family: Arial, sans-serif; /* Specify the font family */
+  }
+
+  img {
+    width: 220px;
+    height: 90px;
+    margin: 20px;
+  }
+
+  .container {
+    max-width: 4000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #submit-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #output-section {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    border: 1px solid #ccc;
+    padding: 30px;
+  }
+
+
+  @import url(//db.onlinewebfonts.com/c/22065c5e6b9fb52ee13ab8a0c7e38fe3?family=FrankfurterDMed);
+
+
+@font-face {font-family: "FrankfurterDMed"; src: url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.eot"); src: url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.woff") format("woff"), url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/22065c5e6b9fb52ee13ab8a0c7e38fe3.svg#FrankfurterDMed") format("svg"); }
+body {
+  font-family: FrankfurterDMed;
+  padding: 37px;
+  color: #d4735d;
+}
+
+.text {
+  font-size: 70px;
+  line-height: 53px;
+  font-family: system-ui;
+  font-weight: 800;
+}
+  
+
+html, body {
+  background-image: linear-gradient(to bottom right, rgb(60, 175, 252), rgb(58, 176, 236), rgb(56, 177, 220), rgb(54, 178, 203), rgb(52, 179, 187), rgb(50, 180, 171), rgb(47, 181, 155), rgb(45, 182, 139), rgb(43, 183, 123), rgb(41, 184, 106), rgb(39, 185, 90), rgb(37, 186, 74));
+  margin: 0;
+  height: 100%;
+}
+.primary-content {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resp-textbox {
+  position: relative;
+  width: 300px;
+}
+.resp-textbox > input[type=text] {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #0003;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) inset;
+  color: #fff;
+}
+.resp-textbox > input[type=text]:focus {
+  outline: none;
+  box-shadow: 325px 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.resp-textbox > input[type=text]::placeholder {
+  color: #fff8;
+}
